@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+        <h1 id="h1">CSS border generator</h1>
+            <div class="block">
+            <div id="block__element"></div>
+                <div class="block__item">
+                    <div class="item__block">
+                        <input type="range" id="topLeftCorner" min="0" max="100" value="0" oninput="border()">
+                        <input type="text" id="topLeftCorners" value="0" readonly>
+                    </div>
+                    <div class="item__block">
+                        <input type="range" id="topRightCorner" min="0" max="100" value="0" oninput="border()">
+                        <input type="text" id="topRightCorners" value=0 readonly>
+                    </div> 
+                    <div class="item__block">
+                        <input type="range" id="bottomRightCorner" min="0" max="100" value="0" oninput="border()">
+                        <input type="text" id="bottomRightCorners" value="0" readonly>
+                     </div> 
+                    <div class="item__block">
+                        <input type="range" id="bottomLeftCorner" min="0" max="100" value="0" oninput="border()">
+                        <input type="text" id="bottomLeftCorners" value="0" readonly>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
